@@ -120,6 +120,8 @@ Si nos vamos al archivo htpd.confg y buscamos el puerto 80 que se llama "Listen 
 
 La ruta tiene que ser las carpetas con los documentos html y asignarselas a los servers que nosotros queramos, por ejemplo "fabulasmaravillosas" la tengo con www1.
 
-Una vez hecho esto iremos al cliente, descargaremos Lynx con $ apt install lynx y pondremos lo siguiente --> lynx www.fabulasmaravillosas.int:80 
+Una vez hecho esto iremos al cliente, descargaremos Lynx con $ apt install lynx y pondremos lo siguiente --->
+
+ lynx www.fabulasmaravillosas.int:80 
 
 Nos debe resolver el noombre y mostrar lo que tenenmos dentro de nuestra carpeta, ya sea un html o una imagen e.t.c.
