@@ -111,8 +111,11 @@ Nos debe devolver la ip a donde apunta el dominio que le pedimos.
 Si nos vamos al archivo htpd.confg y buscamos el puerto 80 que se llama "Listen 80", debajo tendremos que poner la configuración para los virtual hosts y sería tal que así:
 
 <VirtualHost *:80>
+
     DocumentRoot /usr/local/apache2/htdocs/www1
+
     ServerName www.fabulasmaravillosas.int
+
 </VirtualHost>
 
 La ruta tiene que ser las carpetas con los documentos html y asignarselas a los servers que nosotros queramos, por ejemplo "fabulasmaravillosas" la tengo con www1.
