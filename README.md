@@ -105,3 +105,18 @@ dig 33.33.5.1 www.fabulasoscuras.int
 dig 33.33.5.1 www.fabulasmaravillosas.int
 
 Nos debe devolver la ip a donde apunta el dominio que le pedimos.
+
+# 6. DirectoryIndex y Virtual HOST
+
+Si nos vamos al archivo htpd.confg y buscamos el puerto 80 que se llama "Listen 80", debajo tendremos que poner la configuración para los virtual hosts y sería tal que así:
+
+<VirtualHost *:80>
+    DocumentRoot /usr/local/apache2/htdocs/www1
+    ServerName www.fabulasmaravillosas.int
+</VirtualHost>
+
+La ruta tiene que ser las carpetas con los documentos html y asignarselas a los servers que nosotros queramos, por ejemplo "fabulasmaravillosas" la tengo con www1.
+
+Una vez hecho esto iremos al cliente, descargaremos Lynx con $ apt install lynx y pondremos lo siguiente --> lynx www.fabulasmaravillosas.int:80 
+
+Nos debe resolver el noombre y mostrar lo que tenenmos dentro de nuestra carpeta, ya sea un html o una imagen e.t.c.
